@@ -32,6 +32,12 @@
     /*------------
         Header
     ------------*/
+    .header_wrap
+    {
+        height: auto !important;
+    }
+
+
     header
     {
         position: fixed;
@@ -82,8 +88,11 @@
     }
 
 
-    header .info
+    header .info,
+    header.fixed .info
     {
+        display: block;
+
         margin-top: 20px;
         padding: 0;
 
@@ -214,22 +223,11 @@
     /*-----------------
         Mob. header
     -----------------*/
+    .mob_header_wrap,
     .mob_header
     {
         display: block;
     }
-
-
-
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
-    /*---------------
-        Page head
-    ---------------*/
 
 
 
@@ -902,6 +900,22 @@
     .anchors
     {
         display: none;
+    }
+
+
+
+    /*-------------------
+        Services page
+    -------------------*/
+    .services_page .col_left
+    {
+        display: none;
+    }
+
+
+    .services_page .col_main
+    {
+        width: 100%;
     }
 
 

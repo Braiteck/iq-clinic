@@ -388,7 +388,7 @@
         padding: 12px;
     }
 
-    .prices .main span
+    .prices .main > span
     {
         font-size: 15px;
         line-height: 19px;
@@ -701,13 +701,13 @@
 
 
 
-    /*------------
-        Footer
-    ------------*/
+    /*------------------
+        All services
+    ------------------*/
+    .all_services .service .main
+    {
+        font-size: 16px;
 
-
-
-    /*-----------
-        PopUp
-    -----------*/
+        margin-bottom: 20px;
+    }
 }

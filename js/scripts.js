@@ -237,7 +237,9 @@ $(() => {
 
 	// Залипание блока
 	if (WW > 1023) {
-		const Sticky = new hcSticky('.sticky')
+		const Sticky = new hcSticky('.sticky', {
+			top: $('header .bottom').outerHeight() + 24
+		})
 	}
 
 
@@ -292,11 +294,62 @@ $(() => {
 			}
 		})
 	}
+
+
+	// Кнопка 'Вверх'
+	$('.buttonUp .btn').click((e) => {
+		e.preventDefault()
+
+		$('body, html').stop(false, false).animate({ scrollTop: 0 }, 1000)
+	})
+
+
+	// Стоимость услуг
+	$('.prices .main .spoler_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+
+		$(this).hasClass('active')
+			? $(this).closest('.main').next().slideDown(300)
+			: $(this).closest('.main').next().slideUp(200)
+	})
+
+
+	// Плавная прокрутка к якорю
+	const scrollBtns = document.querySelectorAll('.scroll_btn')
+
+	if (scrollBtns) {
+		scrollBtns.forEach(element => {
+			element.addEventListener('click', e => {
+				e.preventDefault()
+
+				let anchor = element.getAttribute('data-anchor')
+
+				document.getElementById(anchor).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				}, 1000)
+			})
+		})
+	}
 })
 
 
 
 $(window).on('load', () => {
+	// Фикс. шапка
+	headerInit = true,
+		headerHeight = $('header').outerHeight()
+
+	$('header').wrap('<div class="header_wrap"></div>')
+	$('.header_wrap').height(headerHeight)
+
+	headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+
+
 	// Фикс. моб. шапка
 	mobHeaderInit = true,
 		mobHeaderHeight = $('.mob_header').outerHeight()
@@ -312,10 +365,22 @@ $(window).on('load', () => {
 
 
 $(window).scroll(() => {
+	// Фикс. шапка
+	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
+
+
 	// Фикс. моб. шапка
 	typeof mobHeaderInit !== 'undefined' && mobHeaderInit && $(window).scrollTop() > 0
 		? $('.mob_header').addClass('fixed')
 		: $('.mob_header').removeClass('fixed')
+
+
+	// Кнопка 'Вверх'
+	$(window).scrollTop() > $(window).innerHeight()
+		? $('.buttonUp').fadeIn(300)
+		: $('.buttonUp').fadeOut(200)
 })
 
 
@@ -334,6 +399,22 @@ $(window).on('resize', () => {
 		} else {
 			firstResize = false
 		}
+
+
+		// Фикс. шапка
+		headerInit = false
+		$('.header_wrap').height('auto')
+
+		setTimeout(() => {
+			headerInit = true
+			headerHeight = $('header').outerHeight()
+
+			$('.header_wrap').height(headerHeight)
+
+			headerInit && $(window).scrollTop() > headerHeight
+				? $('header').addClass('fixed')
+				: $('header').removeClass('fixed')
+		}, 100)
 
 
 		// Фикс. моб. шапка

@@ -46,6 +46,30 @@
 
 
 
+    /*--------------
+        ButtonUp
+    --------------*/
+    .buttonUp
+    {
+        right: 24px;
+        bottom: 48px;
+    }
+
+
+    .buttonUp .btn
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .buttonUp .btn .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -123,12 +147,6 @@
     {
         margin-left: 32px;
     }
-
-
-
-    /*-------------
-        Sidebar
-    -------------*/
 
 
 
@@ -468,7 +486,7 @@
     }
 
 
-    .prices .main span
+    .prices .main > span
     {
         font-size: 17px;
         line-height: 19px;
@@ -864,6 +882,38 @@
     .article_info .col_right > * + *
     {
         margin-top: 24px;
+    }
+
+
+
+    /*-------------------
+        Services page
+    -------------------*/
+    .services_page .col_left
+    {
+        width: 288px;
+    }
+
+
+    .services_page .col_main
+    {
+        width: calc(100% - 312px);
+    }
+
+
+
+    /*------------------
+        All services
+    ------------------*/
+    .all_services .service + .service
+    {
+        margin-top: 52px;
+    }
+
+
+    .all_services .service .sub a:before
+    {
+        top: 6px;
     }
 
 
