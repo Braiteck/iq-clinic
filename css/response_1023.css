@@ -1,0 +1,941 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 32px;
+        --font_size_title_big: 32px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 100%;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 80px 0 0;
+
+        transition: transform .3s linear;
+
+        background: #23222a;
+    }
+
+    header.show
+    {
+        transform: translateX(-100%);
+    }
+
+
+    header .scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        overscroll-behavior-y: contain;
+    }
+
+    header .scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .info
+    {
+        margin-top: 20px;
+        padding: 0;
+
+        background: none;
+
+        order: 2;
+    }
+
+
+    header .bottom
+    {
+        padding: 0;
+
+        background: none;
+        box-shadow: none;
+    }
+
+
+    header .logo,
+    header .categories,
+    header .messengers
+    {
+        display: none !important;
+    }
+
+
+    header .menu
+    {
+        display: block;
+
+        width: 100%;
+    }
+
+
+    header .menu_item.mob_menu_item
+    {
+        display: block;
+    }
+
+    header .menu_item + .menu_item
+    {
+        margin-top: 4px;
+        margin-left: 0;
+    }
+
+
+    header .menu_item > a
+    {
+        padding: 14px 20px;
+
+        border-radius: 4px;
+        background: rgba(255, 255, 255, .08);
+    }
+
+    header .menu_item > a sup
+    {
+        display: none;
+    }
+
+
+    header .order_btn
+    {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 14px 20px;
+    }
+
+
+    header .info .row
+    {
+        width: calc(100% + 20px);
+        max-width: calc(100% + 20px);
+        margin-bottom: -20px;
+        margin-left: -20px;
+
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    header .info .row > *
+    {
+        display: block;
+
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+        padding: 20px;
+
+        border-radius: 8px;
+        background: rgba(255, 255, 255, .04);
+    }
+
+    header .info .row > *.time
+    {
+        order: 2;
+    }
+
+    header .info .row > *.location
+    {
+        width: calc(100% - 20px);
+
+        order: 3;
+    }
+
+
+    header .location .icon,
+    header .time .icon,
+    header .phone .icon
+    {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+
+    header .phone a
+    {
+        font-size: 18px;
+    }
+
+    header .phone .callback_btn
+    {
+        margin-top: 8px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .text_block h3
+    {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3
+    {
+        margin-top: 36px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .first_section .cont
+    {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .first_section .data
+    {
+        width: 392px;
+        padding: 24px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 32px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+
+    .first_section form
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .services .all,
+    .services .service
+    {
+        padding: 24px;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block.block.bg
+    {
+        padding-top: 24px;
+    }
+
+
+    .about_block .data,
+    .about_block .video_link
+    {
+        width: 100%;
+    }
+
+
+    .about_block .video_link
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row > *
+    {
+        width: auto;
+    }
+
+
+    .advantages .item .icon
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        margin: 0;
+    }
+
+    .advantages .item .desc
+    {
+        width: 172px;
+        max-width: 100%;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .person .thumb
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .persons .person .thumb + *
+    {
+        width: calc(100% - 124px);
+    }
+
+
+    .persons .person .post
+    {
+        font-size: 13px;
+        line-height: 130%;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .col_main
+    {
+        width: 100%;
+    }
+
+
+    .prices .col_right
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*------------------
+        Consult form
+    ------------------*/
+    .consult_form
+    {
+        padding: 24px;
+
+        text-align: center;
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .documents .data
+    {
+        padding: 28px 240px 28px 24px;
+    }
+
+
+    .documents .data .img
+    {
+        right: 28px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .contacts_info .phone a,
+    .contacts_info .email a
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*--------------------
+        Promotion head
+    --------------------*/
+    .promotion_head
+    {
+        padding-top: 24px;
+    }
+
+
+    .promotion_head .data
+    {
+        width: calc(50% + 24px);
+        padding: 28px;
+    }
+
+
+    .promotion_head .get_discount .title
+    {
+        font-size: 18px;
+    }
+
+
+    .promotion_head .image
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*--------------------
+        Promotion info
+    --------------------*/
+    .promotion_info .col_main
+    {
+        width: 100%;
+    }
+
+
+    .promotion_info .col_right
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*------------------
+        Reviews page
+    ------------------*/
+    .reviews_page .col_main
+    {
+        width: 100%;
+    }
+
+
+    .reviews_page .col_right
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*-----------
+        Stock
+    -----------*/
+    .stock .categories
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .stock .categories .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .stock .categories .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .stock .categories .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .stock .categories .row > *
+    {
+        position: relative;
+
+        display: inline-block;
+
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .stock .categories .row > * + *
+    {
+        margin-left: 8px;
+    }
+
+
+    .stock .grid > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*-----------------
+        Person info
+    -----------------*/
+    .person_info
+    {
+        padding-top: 20px;
+    }
+
+
+    .person_info .data
+    {
+        width: calc(100% - 280px);
+    }
+
+
+    .person_info .rating
+    {
+        margin-top: 24px;
+    }
+
+
+    .person_info .form
+    {
+        margin-top: 28px;
+    }
+
+
+    .person_info .photo
+    {
+        width: 240px;
+        height: 240px;
+    }
+
+
+
+    /*------------------
+        About person
+    ------------------*/
+    .about_person .col_main
+    {
+        width: 100%;
+    }
+
+
+    .about_person .col_right
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .about_person .section .title
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*--------------
+        Timeline
+    --------------*/
+    .timeline .item
+    {
+        padding: 4px 0;
+    }
+
+
+
+    /*----------------
+        How to get
+    ----------------*/
+    .how_to_get .section .title
+    {
+        font-size: 20px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    /*----------------
+        Requisites
+    ----------------*/
+    .requisites
+    {
+        font-size: 14px;
+    }
+
+
+    .row .requisites
+    {
+        width: 100%;
+    }
+
+
+    .requisites .title
+    {
+        font-size: 20px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    /*----------------
+        Feedback
+    ----------------*/
+    .row .feedback
+    {
+        width: 100%;
+    }
+
+    .row * + .feedback
+    {
+        margin-top: 40px;
+    }
+
+
+    .feedback .title
+    {
+        font-size: 20px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .feedback .form .line
+    {
+        margin-bottom: 24px;
+    }
+
+    .feedback .form .submit
+    {
+        padding: 0;
+    }
+
+    .feedback .form .agree
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .categories
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .articles .categories .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .articles .categories .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .articles .categories .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .articles .categories .row > *
+    {
+        position: relative;
+
+        display: inline-block;
+
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .articles .categories .row > * + *
+    {
+        margin-left: 8px;
+    }
+
+
+    .articles .grid > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .articles .grid.mob_inline
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .articles .grid.mob_inline::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .articles .grid.mob_inline::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .articles .grid.mob_inline > *
+    {
+        position: relative;
+
+        display: inline-block;
+
+        width: 300px;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .articles .grid.mob_inline > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*-------------
+        Anchors
+    -------------*/
+    .anchors
+    {
+        padding: 28px;
+    }
+
+
+    .anchors .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .col_main
+    {
+        width: 100%;
+    }
+
+
+    .article_info .col_right
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .article_info .col_right > * + *
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*-------------
+        Anchors
+    -------------*/
+    .anchors
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    footer .logo img + *
+    {
+        margin-left: 16px;
+    }
+
+
+    footer .copyright
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    footer .links
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

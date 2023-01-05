@@ -1,0 +1,713 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 22px;
+        --font_size_title_big: 22px;
+    }
+
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .prev .icon,
+    .pagination .next .icon
+    {
+        margin: 0;
+    }
+
+    .pagination .prev span,
+    .pagination .next span
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding-top: 64px;
+    }
+
+
+    header .menu_item > a
+    {
+        padding: 12px 16px;
+    }
+
+
+    header .info .row
+    {
+        width: calc(100% + 12px);
+        max-width: calc(100% + 12px);
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    header .info .row > *
+    {
+        width: calc(50% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+        padding: 16px;
+    }
+
+    header .info .row > *.location
+    {
+        width: calc(100% - 12px);
+    }
+
+
+    header .phone a
+    {
+        font-size: 16px;
+    }
+
+    header .phone .callback_btn
+    {
+        font-size: 12px;
+
+        text-align: left;
+    }
+
+
+    header .time,
+    header .location .address
+    {
+        font-size: 13px;
+    }
+
+    header .time .exp,
+    header .location .address .exp
+    {
+        font-size: 12px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        padding: 12px 0;
+    }
+
+
+    .mob_header .logo .name
+    {
+        font-size: 18px;
+    }
+
+    .mob_header .logo .desc
+    {
+        font-size: 11px;
+    }
+
+
+    .mob_header .phone,
+    .mob_header .mob_menu_btn
+    {
+        margin-left: 12px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs
+    {
+        font-size: 11px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 19px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .first_section .cont
+    {
+        padding-top: 40px;
+    }
+
+
+    .first_section .data
+    {
+        width: 216px;
+        padding: 20px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 20px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        margin-top: 12px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+
+
+    .services .row > *
+    {
+        height: 210px;
+    }
+
+    .services .row > * + *
+    {
+        margin-left: 16px;
+    }
+
+
+    .services .all .title
+    {
+        font-size: 18px;
+    }
+
+
+    .services .service .icon
+    {
+        width: 52px;
+        height: 52px;
+    }
+
+    .services .service .icon img
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .services .service .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block.block.bg
+    {
+        padding-top: 20px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .row
+    {
+        margin-bottom: -20px;
+    }
+
+    .persons .row > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .persons .row.mob_inline
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+
+    .persons .row.mob_inline > * + *
+    {
+        margin-left: 16px;
+    }
+
+
+    .persons .person
+    {
+        height: 164px;
+        padding: 20px 100px 20px 20px;
+    }
+
+
+    .persons .person .thumb
+    {
+        top: 20px;
+        right: 20px;
+
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .persons .person .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .persons .person .experience
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review
+    {
+        padding: 20px;
+    }
+
+
+    .reviews .review .title
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .reviews .review .text
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .reviews .review .link
+    {
+        font-size: 13px;
+
+        margin-top: 16px;
+    }
+
+
+
+    .reviews .review.big .name
+    {
+        font-size: 15px;
+    }
+
+    .reviews .review.big .title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .main
+    {
+        padding: 12px;
+    }
+
+    .prices .main span
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+    .prices .main .all_link
+    {
+        font-size: 13px;
+    }
+
+
+    .prices .item,
+    .prices .item:hover
+    {
+        padding: 12px;
+    }
+
+
+
+    /*------------------
+        Consult form
+    ------------------*/
+    .consult_form .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .documents .data
+    {
+        padding: 20px 112px 20px 20px;
+    }
+
+
+    .documents .data .img
+    {
+        right: 12px;
+
+        width: 80px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        padding: 20px;
+    }
+
+    .contacts_info .item + .item
+    {
+        margin-top: 20px;
+    }
+
+
+    .contacts_info .phone a,
+    .contacts_info .email a
+    {
+        font-size: 16px;
+    }
+
+
+    .contacts_info .item .address,
+    .contacts_info .item .label,
+    .contacts_info .item .link
+    {
+        font-size: 13px;
+    }
+
+
+    .contacts_info .map
+    {
+        height: 320px;
+    }
+
+
+
+    /*--------------------
+        Promotion head
+    --------------------*/
+    .promotion_head .data
+    {
+        padding: 20px;
+    }
+
+
+    .promotion_head .pluses
+    {
+        margin-top: 20px;
+    }
+
+
+    .promotion_head .get_discount .title
+    {
+        font-size: 16px;
+    }
+
+
+    .promotion_head .get_discount .form .input
+    {
+        max-width: calc(100% - 116px);
+    }
+
+    .promotion_head .get_discount .form .submit_btn
+    {
+        width: 100px;
+    }
+
+
+
+    /*-----------
+        Stock
+    -----------*/
+    .stock .categories
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .stock .grid
+    {
+        margin-bottom: -20px;
+    }
+
+    .stock .grid > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .stock .item .info
+    {
+        padding: 20px;
+    }
+
+    .stock .item .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    /*-----------------
+        Person info
+    -----------------*/
+    .person_info .form .line
+    {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .person_info .form .submit
+    {
+        width: 100%;
+    }
+
+
+    .person_info .photo
+    {
+        width: 220px;
+        height: 220px;
+    }
+
+
+
+    /*------------------
+        About person
+    ------------------*/
+    .about_person .section .title
+    {
+        font-size: 18px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    /*--------------
+        Timeline
+    --------------*/
+    .timeline .item
+    {
+        padding: 0;
+    }
+
+
+
+    /*----------------
+        How to get
+    ----------------*/
+    .how_to_get .section .title
+    {
+        font-size: 18px;
+    }
+
+
+    .how_to_get .row
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+
+
+    .how_to_get .row > * + *
+    {
+        margin-left: 16px;
+    }
+
+
+
+    /*----------------
+        Requisites
+    ----------------*/
+    .requisites
+    {
+        padding: 20px;
+    }
+
+
+
+    /*----------------
+        Feedback
+    ----------------*/
+    .feedback
+    {
+        padding: 20px;
+    }
+
+
+    .feedback .form .line
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .categories
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .articles .grid
+    {
+        margin-bottom: -20px;
+    }
+
+    .articles .grid > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .articles .article .info
+    {
+        padding: 20px;
+    }
+
+    .articles .article .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .articles .article .desc
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .author .person
+    {
+        padding: 20px;
+    }
+
+
+    .article_info .author .person .thumb
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .article_info .author .person .thumb + *
+    {
+        width: calc(100% - 80px);
+    }
+
+
+    .article_info .author .person .post
+    {
+        font-size: 12px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

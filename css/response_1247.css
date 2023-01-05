@@ -1,0 +1,911 @@
+@media print,
+(max-width: 1247px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 32px;
+        --font_size_title_big: 36px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 100px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .info
+    {
+        padding: 24px 0 28px;
+    }
+
+
+    header .logo
+    {
+        margin-right: auto;
+    }
+
+
+    header .location
+    {
+        display: none;
+    }
+
+
+    header .phone
+    {
+        margin-left: 48px;
+    }
+
+
+    header .categories
+    {
+        margin-right: 32px;
+    }
+
+
+    header .categories .tabs
+    {
+        width: 228px;
+        padding: 28px 28px 36px 0;
+    }
+
+
+    header .categories .col_main
+    {
+        width: calc(100% - 228px);
+        padding: 28px 0 36px 28px;
+    }
+
+
+    header .categories .tab_content.active
+    {
+        width: calc(100% - 288px);
+    }
+
+
+    header .categories .col_main .row
+    {
+        margin-bottom: -40px;
+        margin-left: -28px;
+    }
+
+    header .categories .col_main .row > *
+    {
+        width: calc(50% - 28px);
+        margin-bottom: 40px;
+        margin-left: 28px;
+    }
+
+
+    header .categories .consult_form
+    {
+        width: 260px;
+    }
+
+
+    header .menu_item + .menu_item
+    {
+        margin-left: 32px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding: 28px 0;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        margin-top: 28px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 22px;
+    }
+
+    .text_block h3
+    {
+        font-size: 17px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .first_section .cont
+    {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+
+    .first_section .data
+    {
+        width: 412px;
+        padding: 28px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 40px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 16px;
+    }
+
+
+    .first_section form
+    {
+        margin-top: 40px;
+    }
+
+    .first_section form .input
+    {
+        width: calc(100% - 136px);
+        padding: 0 19px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .services .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .services .all,
+    .services .service
+    {
+        padding: 28px;
+    }
+
+
+    .services .all .title
+    {
+        font-size: 22px;
+    }
+
+
+    .services .all .link
+    {
+        margin-top: 24px;
+    }
+
+
+    .services .service .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block .data,
+    .about_block .video_link
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .about_block .advantages
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .advantages .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .advantages .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .advantages .row > *
+    {
+        position: relative;
+
+        display: inline-block;
+
+        width: 284px;
+        min-height: 56px;
+        margin: 0;
+        padding-left: 72px;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .advantages .row > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .advantages .item .icon
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        margin: 0;
+    }
+
+    .advantages .item .icon + *
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .persons .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .persons .person
+    {
+        padding: 24px;
+    }
+
+
+    .persons .person .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .persons .person .experience
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .list > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .reviews .review
+    {
+        padding: 28px;
+    }
+
+
+    .reviews .review .title
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+
+    .reviews .review.big .name
+    {
+        font-size: 18px;
+    }
+
+    .reviews .review.big .date
+    {
+        margin-top: 12px;
+    }
+
+    .reviews .review.big .rating
+    {
+        margin-top: 20px;
+    }
+
+    .reviews .review.big .title
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        margin-top: 28px;
+    }
+
+    .reviews .review.big .text
+    {
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .col_main
+    {
+        width: calc(100% - 312px);
+    }
+
+
+    .prices .col_right
+    {
+        width: 288px;
+    }
+
+
+    .prices .main span
+    {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+
+
+    /*------------------
+        Consult form
+    ------------------*/
+    .consult_form
+    {
+        padding: 28px;
+    }
+
+
+    .consult_form .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .documents .data
+    {
+        padding: 32px 260px 32px 28px;
+    }
+
+
+    .documents .data .img
+    {
+        right: 40px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item
+    {
+        width: calc(50% - 20px);
+    }
+
+    .contacts_info .item:nth-child(1),
+    .contacts_info .item:nth-child(2)
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .contacts_info .item > .icon + *
+    {
+        width: calc(100% - 56px);
+    }
+
+
+
+    /*--------------------
+        Promotion head
+    --------------------*/
+    .promotion_head
+    {
+        padding-top: 28px;
+    }
+
+
+    .promotion_head .row
+    {
+        margin-top: 20px;
+    }
+
+
+    .promotion_head .data
+    {
+        padding: 36px;
+    }
+
+
+    .promotion_head .price
+    {
+        font-size: 22px;
+
+        margin-top: 24px;
+    }
+
+
+    .promotion_head .get_discount .title
+    {
+        font-size: 19px;
+    }
+
+
+
+    /*--------------------
+        Promotion info
+    --------------------*/
+    .promotion_info .col_main
+    {
+        width: calc(100% - 312px);
+    }
+
+
+    .promotion_info .col_right
+    {
+        width: 288px;
+    }
+
+
+
+    /*------------------
+        Reviews page
+    ------------------*/
+    .reviews_page .col_main
+    {
+        width: calc(100% - 312px);
+    }
+
+
+    .reviews_page .col_right
+    {
+        width: 288px;
+    }
+
+
+
+    /*-----------
+        Stock
+    -----------*/
+    .stock .categories
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .stock .categories a
+    {
+        padding: 10px 16px 12px;
+    }
+
+
+
+    .stock .grid
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .stock .grid > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .stock .item .info
+    {
+        padding: 20px 24px 24px;
+    }
+
+    .stock .item .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*-----------------
+        Person info
+    -----------------*/
+    .person_info
+    {
+        padding-top: 40px;
+    }
+
+
+    .person_info .data
+    {
+        width: calc(100% - 320px);
+    }
+
+
+    .person_info .rating
+    {
+        margin-top: 28px;
+    }
+
+
+    .person_info .form
+    {
+        margin-top: 40px;
+    }
+
+
+    .person_info .photo
+    {
+        width: 280px;
+        height: 280px;
+    }
+
+
+
+    /*------------------
+        About person
+    ------------------*/
+    .about_person .col_main
+    {
+        width: calc(100% - 312px);
+    }
+
+
+    .about_person .col_right
+    {
+        width: 288px;
+    }
+
+
+    .about_person .section .title
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*----------------
+        How to get
+    ----------------*/
+    .how_to_get .section .title
+    {
+        font-size: 22px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .how_to_get .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .how_to_get .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .how_to_get .item .thumb,
+    .how_to_get .item .desc
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*----------------
+        Requisites
+    ----------------*/
+    .requisites
+    {
+        font-size: 13px;
+
+        padding: 28px;
+    }
+
+
+    .row .requisites
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .requisites .title
+    {
+        font-size: 22px;
+
+        margin-bottom: 28px;
+    }
+
+
+
+    /*----------------
+        Feedback
+    ----------------*/
+    .feedback
+    {
+        padding: 28px;
+    }
+
+
+    .row .feedback
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .feedback .title
+    {
+        font-size: 22px;
+
+        margin-bottom: 28px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .categories
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .articles .categories a
+    {
+        padding: 10px 16px 12px;
+    }
+
+
+
+    .articles .grid
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .articles .grid > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .articles .article .info
+    {
+        padding: 20px 24px 24px;
+    }
+
+    .articles .article .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .articles .article .desc
+    {
+        margin-bottom: 28px;
+    }
+
+
+
+    /*-------------
+        Anchors
+    -------------*/
+    .anchors
+    {
+        padding: 28px;
+    }
+
+
+    .anchors .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .col_main
+    {
+        width: calc(100% - 312px);
+    }
+
+
+    .article_info .col_right
+    {
+        width: 288px;
+    }
+
+    .article_info .col_right > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .info
+    {
+        padding: 40px 0;
+    }
+
+
+    footer .logo img + *
+    {
+        margin-left: 12px;
+    }
+
+
+    footer .phone .icon,
+    footer .time .icon
+    {
+        margin-right: 12px;
+    }
+
+
+    footer .title
+    {
+        font-size: 17px;
+        line-height: 100%;
+    }
+
+
+    footer .links,
+    footer .links > * + *
+    {
+        margin-left: 40px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}
